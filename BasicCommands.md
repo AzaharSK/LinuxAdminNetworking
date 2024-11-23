@@ -112,7 +112,12 @@ logfile_2024-11-23_12-09-05.log
 mistu@ubuntu:~/log$ echo "This is a log entry" >> "logfile_$(date +"%Y-%m-%d_%H-%M-%S").log"
 mistu@ubuntu:~/log$ cat logfile_2024-11-23_12-09-43.log 
 This is a log entry
-
+```
+### Pass Date int logfile
+```bash
+mistu@ubuntu:~/log$ echo "$(date +"%Y-%m-%d %T") - Log entry" >> "logfile_$(date +"%Y-%m-%d").log"
+mistu@ubuntu:~/log$ cat logfile_2024-11-23.log 
+2024-11-23 12:13:29 - Log entry
 ```
   
 * `clear:` clear console text
