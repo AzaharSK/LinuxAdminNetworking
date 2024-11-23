@@ -78,9 +78,42 @@ System clock synchronized: yes
 
 #  Setting Timezone Permanently
 mistu@ubuntu:~$ t sudo timedatectl set-timezone "America/New_York"
+```
+
+### Formatting the Output Using +FORMAT
+* You can customize the output of the date command by using a format string, which consists of various placeholders.
+* Common Format Specifiers:
+* %Y: Year (4 digits)
+* %m: Month (2 digits)
+* %d: Day of the month (2 digits)
+* %H: Hour (24-hour format)
+* %M: Minute (2 digits)
+* %S: Second (2 digits)
+* %T: Time in HH:MM:SS format
+* %A: Full weekday name (e.g., Monday)
+* %B: Full month name (e.g., January)
+
+```bash
+mistu@ubuntu:~$ date +"%Y-%m-%d"
+2024-11-23
+mistu@ubuntu:~$ date +"%Y:%m:%d"
+2024:11:23
+mistu@ubuntu:~$ date +"%Y-%m-%d %H:%M:%S"
+2024-11-23 12:04:16
+mistu@ubuntu:~$ date +"%A, %B %d, %Y %T"
+Saturday, November 23, 2024 12:05:32
+```
+### Creating a Log File with the Current Date and Time
+```bash
+mistu@ubuntu:~$ mkdir log && cd log
+mistu@ubuntu:~/log$ touch "logfile_$(date +"%Y-%m-%d_%H-%M-%S").log"
+mistu@ubuntu:~/log$ ls
+logfile_2024-11-23_12-09-05.log
+mistu@ubuntu:~/log$ echo "This is a log entry" >> "logfile_$(date +"%Y-%m-%d_%H-%M-%S").log"
+mistu@ubuntu:~/log$ cat logfile_2024-11-23_12-09-43.log 
+This is a log entry
 
 ```
- 
   
 * `clear:` clear console text
 * `exit:` exits de terminal
