@@ -134,7 +134,8 @@ node1.ibm.com
 
 ### Switch USER
 ```bash
-su - root
+$su - username1 
+$su - root
 ```
 * -  => Load the env of the user "root"
 * root => argument: root user
