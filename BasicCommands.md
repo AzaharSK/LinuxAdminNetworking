@@ -122,3 +122,10 @@ mistu@ubuntu:~/log$ cat logfile_2024-11-23.log
   
 * `clear:` clear console text
 * `exit:` exits de terminal
+
+```bash
+$hostname 
+node1.ibm.com 
+```
+* node1 => server name
+* ibm.com => domain name
