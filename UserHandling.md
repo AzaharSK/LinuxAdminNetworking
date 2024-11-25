@@ -1,4 +1,11 @@
-### Hostname 
+### USER DETAILS
+The id command in Linux displays a user's UID (User ID), GID (Group ID), and the groups they belong to. This is particularly helpful for understanding a user's permissions and group memberships.
+
+```bash
+mistu@ubuntu:~$ id
+uid=1000(mistu) gid=1000(mistu) groups=1000(mistu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
+```
+### Hostname or Machine name
 
 ```bash
 $hostname 
