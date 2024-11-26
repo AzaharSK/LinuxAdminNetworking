@@ -15,11 +15,12 @@ cat /var/log/kern.log
 ```bash
 grep "error" /var/log/syslog
 ```
-* #### Clear log files (use with caution):
+* #### Clear the contents of /var/log/syslog:
 
-bash
-
-> /var/log/syslog
+```bash
+cp /var/log/syslog /var/log/syslog.backup
+sudo truncate -s 0 /var/log/syslog   
+```
 
 * ### Check system logs for any issues:
 
