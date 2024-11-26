@@ -22,8 +22,18 @@ cp /var/log/syslog /var/log/syslog.backup
 sudo truncate -s 0 /var/log/syslog   
 ```
 
-* ### Check system logs for any issues:
+* #### Check system logs for any issues:
 
 ```bash
-dmesg | less
+dmesg | less     # To view the kernel ring buffer logs
+dmesg | grep -i error # dmesg for Hardware Issues
+
+journalctl  -k   # For systemd logs related to kernel events
+journalctl -xe  # Show logs from the system's journal (including errors)
+
+```
+* #### Perf for Performance Profiling
+* perf is a powerful tool for performance analysis. It can help you track CPU usage, cache misses, and more.
+```bash
+perf stat ./your_program
 ```
