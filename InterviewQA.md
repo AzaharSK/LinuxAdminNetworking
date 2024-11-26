@@ -81,3 +81,10 @@
 * How do you handle scaling issues in a cloud-based Linux application?
 * Describe your experience with CI/CD pipelines involving Linux.
 * What’s your strategy for ensuring Linux server security in a cloud environment?
+
+### Tips for Preparation:
+* Practice common commands (find, grep, sed, awk, etc.).
+* Familiarize yourself with cloud integration tools like Ansible, Terraform, and cloud provider CLI tools.
+* Learn containerization basics (Docker, Kubernetes).
+* Understand Linux networking and troubleshooting in cloud environments.
+* Be ready to explain real-world use cases and your experiences with Linux in cloud systems.
