@@ -19,7 +19,7 @@ grep "error" /var/log/syslog
 
 ```bash
 cp /var/log/syslog /var/log/syslog.backup
-sudo truncate -s 0 /var/log/syslog   
+sudo > /var/log/syslog
 ```
 
 * #### Check system logs for any issues:
