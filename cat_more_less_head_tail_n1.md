@@ -1,6 +1,7 @@
 ### You can create a new file and input text interactively
 ```bash
 cat > newfile.txt
+# Ctrl+D to save and exit.
 ```
 ### Display Files Contents 
 ```bash
