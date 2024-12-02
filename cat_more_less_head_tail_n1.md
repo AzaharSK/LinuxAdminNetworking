@@ -2,6 +2,7 @@
 ```bash
 cat > newfile.txt
 # Ctrl+D to save and exit.
+cat >> myfile.txt   # append content to an existing file
 ```
 ### Display Files Contents 
 ```bash
