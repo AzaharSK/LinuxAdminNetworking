@@ -20,7 +20,7 @@ sudo grep 'Failed password' /var/log/auth.log
 
 ### View successful logins:
 ```bash
-$ last
+$ last -F
 ```
 
 ### View failed login attempts:
