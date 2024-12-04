@@ -11,6 +11,7 @@ $ grep -c "word" file.txt          # Count the number of matching lines
 $ grep -inr -E "error|warning" /path #  Search Multiple Patterns
 $ grep -f patterns.txt file.txt      # Using -f to read patterns from a file
 $ grep -l "word" *.txt               # Filter Files with Matches
+$ cat file.txt | grep "word" | grep -v "exclude_this" 
 ```
 
 
@@ -23,12 +24,12 @@ Output:
 /var/log/nginx/error.log:54:Error: file not found
 ```
 
-### 6. Invert Match
+### Invert Match
 Show lines that do not match the pattern:
 ```bash
 grep -v "word" file.txt
 ```
-### 7. Search Multiple Patterns
+### Search Multiple Patterns
 Match lines containing any of the patterns:
 ```bash
 grep -E "pattern1 | pattern2" file.txt
@@ -42,9 +43,7 @@ Using -f to read patterns from a file:
 grep -f patterns.txt file.txt
 ```
 
-```
-
-### 10. Filter Files with Matches
+###  Filter Files with Matches
 Display only the names of files containing matches:
 
 ```bash
@@ -55,7 +54,7 @@ Display files that do not contain matches:
 ```bash
 grep -L "word" *.txt
 ```
-### 11. Match Beginning or End of Line
+### Match Beginning or End of Line
 Match lines starting with a word:
 ```bash
 grep "^word" file.txt
@@ -64,25 +63,25 @@ Match lines ending with a word:
 ```bash
 grep "word$" file.txt
 ```
-### 12. Search Compressed Files
+### Search Compressed Files
 Search directly inside compressed files (e.g., .gz):
 ```bash
 zgrep "word" file.gz
 ```
-### 13. Fixed String Search
+### Fixed String Search
 Match the exact string, treating the pattern as a literal (no regex):
 ```bash
 grep -F "word" file.txt
 ```
-### 14. Use Grep with Piping
+### Use Grep with Piping
 Chain grep with other commands to refine output:
 ```bash
 cat file.txt | grep "word" | grep -v "exclude_this"
 ```
 
-### 15. Use grep ls
+### Use grep ls
 
-### 16. Use grep with find
+### Use grep with find
 Efficiently search for a specific term in files matching a pattern (e.g., *.txt). 
 
 ```bash
