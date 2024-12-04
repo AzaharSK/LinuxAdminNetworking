@@ -1,3 +1,6 @@
+
+![image](https://github.com/user-attachments/assets/b90bf7d2-2f78-4b9e-907d-8e4230d51ceb)
+
 ### who :  Which all users are login right now ?
 ```bash
 ubuntu@tryit:~$ who
