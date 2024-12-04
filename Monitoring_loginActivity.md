@@ -17,3 +17,15 @@ sudo grep 'Failed password' /var/log/auth.log
 * b) ```/var/log/wtmp``` and ```/var/log/btmp```
 * ```wtmp``` logs all successful login records.
 * ```btmp``` logs all failed login attempts.
+
+### View successful logins:
+```bash
+$ last
+```
+
+### View failed login attempts:
+
+```bash
+$ sudo lastb
+```
+
