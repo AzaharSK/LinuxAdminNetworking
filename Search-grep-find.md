@@ -1,24 +1,19 @@
 
 ### 1. Basic Search
-Search for a word in a file:
+
 ```bash
-grep "word" file.txt
+$ grep "word" file.txt             # Search for a word in a file
+$ grep -r "word" directory/        # Search in all files within a directory and its subdirectories Recursive
+$ grep -i "word" file.txt          # Ignore Case- Perform a case-insensitive search
+$ grep -n "word" file.txt          # Display the line number of each matching line
+$ grep -w "word" file.txt          # Match only whole words (not substrings)
+$ grep -c "word" file.txt          # Count the number of matching lines
+$ grep -inr -E "error|warning" /path #  Search Multiple Patterns
+$ grep -f patterns.txt file.txt      # Using -f to read patterns from a file
+$ grep -l "word" *.txt               # Filter Files with Matches
 ```
-### 2. Recursive Search
-Search in all files within a directory and its subdirectories:
-```bash
-grep -r "word" directory/
-```
-### 3. Ignore Case
-Perform a case-insensitive search:
-```bash
-grep -i "word" file.txt
-```
-### 4. Show Line Numbers
-Display the line number of each matching line:
-```bash
-grep -n "word" file.txt
-```
+
+
 ### Using together
 ```bash
 grep -inr "error" /var/log
@@ -27,11 +22,7 @@ Output:
 /var/log/syslog:12:Error connecting to the server
 /var/log/nginx/error.log:54:Error: file not found
 ```
-### 5. Match Whole Words
-Match only whole words (not substrings):
-```bash
-grep -w "word" file.txt
-```
+
 ### 6. Invert Match
 Show lines that do not match the pattern:
 ```bash
@@ -50,16 +41,9 @@ Using -f to read patterns from a file:
 ```bash
 grep -f patterns.txt file.txt
 ```
-### 8. Highlight Matches
-Highlight matching patterns in the output:
-```bash
-grep --color=always "word" file.txt
+
 ```
-### 9. Count Matches
-Count the number of matching lines:
-```bash
-grep -c "word" file.txt
-```
+
 ### 10. Filter Files with Matches
 Display only the names of files containing matches:
 
