@@ -103,4 +103,20 @@ Using find with xargs and grep is a powerful way to:
 
 ### find command
 The find command is a powerful tool for searching and processing files and directories in Linux/Unix systems. Below are various use cases and examples for find:
-  
+
+### Find files by size e.g- larger than 100 MB
+```bash
+find /path/to/search -size +100M
+
+# +100M: Files larger than 100 MB.
+# -100M: Files smaller than 100 MB
+```
+### Find Files by Type
+* -type d: Directories.
+* -type f: Files.
+* -type l: Symbolic links.
+
+```bash
+find /path/to/search -type d
+```
+###  Find files modified by time i.e - in the last 7 days
