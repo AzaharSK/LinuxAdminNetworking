@@ -19,6 +19,7 @@ uid=1000(mistu) gid=1000(mistu) groups=1000(mistu),4(adm),24(cdrom),27(sudo),30(
 | `groups username`   | List all groups a user belongs to.                                                   |
 | `finger username`   | Show user details (name, shell, etc.).                                               |
 
+![Screenshot from 2024-12-08 01-14-51](https://github.com/user-attachments/assets/136c6b30-e26f-4ef0-9dae-08356bd8488e)
 
 ### Hostname or Machine name
 
