@@ -17,20 +17,23 @@ node1.ibm.com
 
 ### `hostname` Command Options
 
-| **Option**   | **Description**                                             | **Example**                     |
-|--------------|-------------------------------------------------------------|-----------------------------------|
-| `-a`         | Displays the **alias names** of the host.                     | `hostname -a`                    |
-| `-A`         | Displays the **FQDN (Fully Qualified Domain Names)**.         | `hostname -A`                    |
-| `-b`         | **Boot** the system with the name from `/etc/hostname`.       | `hostname -b`                    |
-| `-d`         | Shows the **DNS domain name** of the host.                    | `hostname -d`                    |
-| `-f`         | Displays the **fully qualified domain name (FQDN)**.          | `hostname -f`                    |
-| `-F FILE`    | Sets the hostname from the specified file (e.g., `/etc/hostname`). | `hostname -F /etc/hostname`      |
-| `-i`         | Shows the **IP address** of the host.                         | `hostname -i`                    |
-| `-I`         | Shows all network **IP addresses** assigned to the host.      | `hostname -I`                    |
-| `-s`         | Displays the **short hostname** (only the first part of FQDN).| `hostname -s`                    |
-| `-y`         | Displays the **NIS/YP domain name**.                          | `hostname -y`                    |
-| `--help`     | Displays help information.                                    | `hostname --help`                |
-| `--version`  | Shows the version of the `hostname` command.                  | `hostname --version`             |
+# `hostname` Command Options
+
+| **Option**     | **Description**                                              | **Sample Output**                    |
+|----------------|--------------------------------------------------------------|--------------------------------------|
+| `hostname -a`  | Displays the **alias names** of the host.                     | `webserver1 myserver`               |
+| `hostname -A`  | Displays the **Fully Qualified Domain Name (FQDN)**.          | `webserver1.example.com`            |
+| `hostname -b`  | **Boot** the system with the name from `/etc/hostname`.        | (No output, this affects booting)   |
+| `hostname -d`  | Shows the **DNS domain name** of the host.                    | `example.com`                       |
+| `hostname -f`  | Displays the **fully qualified domain name (FQDN)**.          | `webserver1.example.com`            |
+| `hostname -F`  | Sets the hostname from the specified file (e.g., `/etc/hostname`). | (No output, sets hostname)         |
+| `hostname -i`  | Shows the **IP address** of the host.                         | `192.168.1.10`                      |
+| `hostname -I`  | Shows all network **IP addresses** assigned to the host.      | `192.168.1.10 192.168.1.20`         |
+| `hostname -s`  | Displays the **short hostname** (only the first part of FQDN).| `webserver1`                        |
+| `hostname -y`  | Displays the **NIS/YP domain name**.                          | `example`                           |
+| `hostname --help` | Displays help information.                                  | (Shows usage details and options)   |
+| `hostname --version` | Shows the version of the `hostname` command.              | `hostname from util-linux 2.36`     |
+
 
 
 ### Switch USER
