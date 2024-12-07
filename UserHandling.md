@@ -6,20 +6,18 @@ mistu@ubuntu:~$ id
 uid=1000(mistu) gid=1000(mistu) groups=1000(mistu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
 ```
 
-### User details
-# **Linux Commands to View User Details**
+### **User Details**
 
-| **Command**         | **Description**                                |
-|---------------------|-----------------------------------------------|
-| `cat /etc/passwd`   | View all user details (username, UID, GID, shell, etc.)   from `/etc/passwd`. User details  |
-| `cat /etc/shadow`   | View all Encrypted passwords and password policies (requires root access).     |
-| `cat /etc/group`    | View all groups and user memberships.         |
-| `cat /etc/gshadow`  | View Encrypted group passwords & policies (requires root access). 	              |
-| `id username`       | View user UID, GID, and groups.               |
-
-| `whoami`            | Show current logged-in user.                  |
-| `groups username`   | List all groups a user belongs to.            |
-| `finger username`   | Show user details (name, shell, etc.).        |
+| **Command**         | **Description**                                                                     |
+|---------------------|-------------------------------------------------------------------------------------|
+| `cat /etc/passwd`   | View all user details (username, UID, GID, shell, etc.) from `/etc/passwd`.           |
+| `cat /etc/shadow`   | View all encrypted passwords and password policies (requires root access).           |
+| `cat /etc/group`    | View all groups and user memberships.                                                |
+| `cat /etc/gshadow`  | View encrypted group passwords & policies (requires root access).                    |
+| `id username`       | View user UID, GID, and groups.                                                      |
+| `whoami`            | Show current logged-in user.                                                        |
+| `groups username`   | List all groups a user belongs to.                                                   |
+| `finger username`   | Show user details (name, shell, etc.).                                               |
 
 
 ### Hostname or Machine name
