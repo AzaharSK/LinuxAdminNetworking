@@ -60,6 +60,11 @@ $su - root
 * -  => Load the env of the user "root"
 * root => argument: root user
 
+#### Root access : when you do not know root password:
+$ sudo -s user1
+password: <password for user1>
+root@machine# 
+
 ### LogOut
 
 ```bash
