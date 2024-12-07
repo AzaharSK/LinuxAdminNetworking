@@ -15,7 +15,7 @@ node1.ibm.com
 * ibm.com => domain name
 
 
-# `hostname` Command Options
+### `hostname` Command Options
 
 | **Option**   | **Description**                                             | **Example**                     |
 |--------------|-------------------------------------------------------------|-----------------------------------|
