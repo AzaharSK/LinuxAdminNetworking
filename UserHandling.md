@@ -176,7 +176,7 @@ _=/usr/bin/env
 ## Usermanagement demo
 
 
-### Create a new user whose full name is “Ying Yang,” with the login name
+### Create a new user whose full name is “Azaharuddin Sk,” with the login name "azahar"
 (account name) of yyang. Type the following:
 ```bash
 [root@server ~]# useradd -c "Azaharuddin Sk" azahar
