@@ -158,16 +158,18 @@ _=/usr/bin/env
 - **Difference between `adduser` and `useradd`**: `adduser` is more user-friendly, while `useradd` is lower-level and requires manual directory and file setup.
 - **Password expiration commands**: `chage` can be used to set when a password expires, how soon a warning is issued, etc.
 
-### Linux Password Management Commands
+# Linux Password Management Commands
 
-| **Command**                               |  **Description**                                                         |  **Example Usage**                   |  **Example Output**                                                                                              |
-|----------------------------------          |---------------------------------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-          | `passwd`                         |  Allows the user to change their own password.                             |  `passwd`                           |  ```Changing password for user john_doe. Current password: **** New password: ******** Retype new password: ******** passwd: all authentication tokens updated successfully.```  |
-| `sudo passwd username`                     |  Lets an administrator set or change another user's password.              |  `sudo passwd alice`                |  ```Enter new UNIX password: ******** Retype new UNIX password: ******** passwd: password updated successfully.```  |
-| `sudo chage -l username`                   |  Shows the password expiry policy, last change date, and expiration rules. |  `sudo chage -l alice`              |  ```Last password change: Aug 19, 2024 Password expires: never Password inactive: never Account expires: never Minimum number of days between password change: 0 Maximum number of days between password change: 99999 Number of days of warning before password expires: 7```  |
-| `sudo chage -d 0 username`                 |  Force the user to change their password on next login.                    |  `sudo chage -d 0 alice`            |  No output, but forces the user to change their password at next login.                                        |
-| `sudo passwd -l username`                  |  Lock the user’s password (i.e., disable login).                          |  `sudo passwd -l alice`             |  ```passwd: password expiry information changed.```                                                           |
-| `sudo passwd -u username`                  |  Unlocks a previously locked user's password.                              |  `sudo passwd -u alice`             |  ```passwd: password expiry information changed.```                                                           |
+| **Command**                     |  **Description**                                                         |  **Example Usage**                   |  **Example Output**                                                                                              |
+|----------------------------------|---------------------------------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `passwd`                         |  Allows the user to change their own password.                             |  `passwd`                           |  ```Changing password for user john_doe. Current password: **** New password: ******** Retype new password: ******** passwd: all authentication tokens updated successfully.```  |
+| `sudo passwd username`           |  Lets an administrator set or change another user's password.              |  `sudo passwd alice`                |  ```Enter new UNIX password: ******** Retype new UNIX password: ******** passwd: password updated successfully.```  |
+| `sudo chage -l username`         |  Shows the password expiry policy, last change date, and expiration rules. |  `sudo chage -l alice`              |  ```Last password change: Aug 19, 2024 Password expires: never Password inactive: never Account expires: never Minimum number of days between password change: 0 Maximum number of days between password change: 99999 Number of days of warning before password expires: 7```  |
+| `sudo chage -d 0 username`       |  Force the user to change their password on next login.                    |  `sudo chage -d 0 alice`            |  No output, but forces the user to change their password at next login.                                        |
+| `sudo passwd -l username`        |  Lock the user’s password (i.e., disable login).                          |  `sudo passwd -l alice`             |  ```passwd: password expiry information changed.```                                                           |
+| `sudo passwd -u username`        |  Unlocks a previously locked user's password.                              |  `sudo passwd -u alice`             |  ```passwd: password expiry information changed.```                                                           |
+
+                                               |
 
 
 
