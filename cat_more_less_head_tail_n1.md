@@ -12,7 +12,7 @@ cat -n filename.txt                      # Show Content of a File with Line Numb
 cat file1.txt file2.txt file3.txt        # concatenating contentes of files
 cat file1.txt file2.txt > mergedfile.txt # Concatenate and Save Output into a New File
 cat -s filename.txt                      # Remove Extra Blank Lines
-
+cat /etc/passwd /etc/group  /etc/hosts > users-and-groups.txt
 ```
 ### Redirects data
 
