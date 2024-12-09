@@ -216,6 +216,23 @@ passwd: all authentication tokens updated successfully.
 word in the phrase. Thus, the phrase “coffee is VERY GOOD for you and me” becomes ciVG4yam.
 The phrase is memorable, even if the resulting password isn’t.
 
+### Set an expiry date for user "azahar"
+```bash
+[root@server ~]# chage -E 2024-12-31 azahar
+```
+### Verify the expiry date for user "azahar"
+```bash
+[root@server ~]# chage -l azahar
+
+Last password change: Aug 19, 2024
+Password expires: never
+Password inactive: never
+Account expires: Dec 31, 2024
+Minimum number of days between password change: 0
+Maximum number of days between password change: 99999
+Number of days of warning before password expires: 7
+```
+
 ### Create a new group called R&D:
 ```bash
 [root@server ~]# groupadd R&D
@@ -231,3 +248,41 @@ R&D:x:1002:
 [root@server ~]# grep 'R&D' /etc/group
 R&D:x:1050:
 ```
+### Add user "azahar" to the "R&D" group
+```bash
+[root@server ~]# usermod -aG 'R&D' azahar
+```
+### Verify user "azahar" is part of the "R&D" group
+```bash
+[root@server ~]# id azahar
+uid=1001(azahar) gid=1001(azahar) groups=1001(azahar),1050(R&D)
+```
+### Remove user "azahar" from the "R&D" group
+```bash
+[root@server ~]# gpasswd -d azahar 'R&D'
+Removing user azahar from group R&D
+```
+### Verify that user "azahar" is no longer in the "R&D" group
+```bash
+[root@server ~]# id azahar
+uid=1001(azahar) gid=1001(azahar) groups=1001(azahar)
+```
+
+### Verify "R&D" group membership
+```bash
+[root@server ~]# grep 'R&D' /etc/group
+R&D:x:1050:
+```
+
+### Use the userdel command to delete the user 'azahar' and group 'R&D' that you created
+
+```bash
+[root@server ~]# userdel -r azahar
+all of the entries in the /etc/passwd and /etc/shadow files, as well as references in the /etc/group file, are automatically removed.
+-r :  all of the files owned by the user in that user’s home directory are removed as well.
+
+[root@server ~]# groupdel R&D
+Notice that the bogusgroup entry in the /etc/group file is removed
+```
+
+
