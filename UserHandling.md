@@ -260,7 +260,7 @@ uid=1001(azahar) gid=1001(azahar) groups=1001(azahar),1050(R&D)
 ### Remove user "azahar" from the "R&D" group
 ```bash
 [root@server ~]# gpasswd -d azahar 'R&D'
-Removing user azahar from group R&D
+# Removing user azahar from group R&D
 ```
 ### Verify that user "azahar" is no longer in the "R&D" group
 ```bash
@@ -278,11 +278,11 @@ R&D:x:1050:
 
 ```bash
 [root@server ~]# userdel -r azahar
-all of the entries in the /etc/passwd and /etc/shadow files, as well as references in the /etc/group file, are automatically removed.
--r :  all of the files owned by the user in that user’s home directory are removed as well.
+# all of the entries in the /etc/passwd and /etc/shadow files, as well as references in the /etc/group file, are automatically removed.
+# -r :  all of the files owned by the user in that user’s home directory are removed as well.
 
 [root@server ~]# groupdel R&D
-Notice that the bogusgroup entry in the /etc/group file is removed
+# Notice that the bogusgroup entry in the /etc/group file is removed
 ```
 
 
