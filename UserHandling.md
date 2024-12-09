@@ -173,10 +173,10 @@ _=/usr/bin/env
 
 
 
-### Usermanagement demo
+## Usermanagement demo
 
 
-* 1. Create a new user whose full name is “Ying Yang,” with the login name
+### Create a new user whose full name is “Ying Yang,” with the login name
 (account name) of yyang. Type the following:
 ```bash
 [root@server ~]# useradd -c "Azaharuddin Sk" azahar
@@ -193,18 +193,18 @@ this example.
 * A home directory is automatically created for all new users (for
 example, /home/azahar).
 
-* 2.  Verify the user "azahar"
+### Verify the user "azahar"
 ```bash
 [root@server ~]# id azahar
 uid=1001(azahar) gid=1001(azahar) groups=1001(azahar)
 ```
-* Examine the entry for "azahar" in the /etc/passwd file
+### Examine the entry for "azahar" in the /etc/passwd file
 
 ```bash
 root@server ~]# grep azahar /etc/passwd
 azahar:x:1001:1001:,,,:/home/azahar:/bin/bash
 ```
-* 3 Change the password
+### Change the password
 ```bash
 [root@server ~]# passwd azahar
 Changing password for user azahar.
@@ -216,16 +216,16 @@ passwd: all authentication tokens updated successfully.
 word in the phrase. Thus, the phrase “coffee is VERY GOOD for you and me” becomes ciVG4yam.
 The phrase is memorable, even if the resulting password isn’t.
 
-* 4. Create a new group called R&D:
+### Create a new group called R&D:
 ```bash
 [root@server ~]# groupadd R&D
 ```
-* 5. Examine the entry for the research group in the /etc/group file:
+### Examine the entry for the research group in the /etc/group file:
 ```bash
 [root@server ~]# grep 'R&D' /etc/group
 R&D:x:1002:
 ```
-* 6. Change the GID of the "R&D" group to 1050
+### Change the GID of the "R&D" group to 1050
 ```bash
 [root@server ~]# groupmod -g 1050 'R&D'
 [root@server ~]# grep 'R&D' /etc/group
