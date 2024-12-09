@@ -124,3 +124,36 @@ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 _=/usr/bin/env
 ```
 
+# Linux User Management Commands
+
+| **Command**     | **Options**                  | **Description**                                 | **Example**                      | **Example Output**                        |
+|-----------------|-----------------------------|-------------------------------------------------|-----------------------------------|-------------------------------------------|
+| `whoami`        | None                         | Displays the current logged-in username.       | `whoami`                          | `john_doe`                                |
+| `id`            | `-u, -g, -G, -n`             | Displays user ID (UID) and group information.  | `id`                              | `uid=1000(john_doe) gid=1000(john_doe) groups=1000(john_doe),27(sudo)` |
+| `adduser`       | `[username]`                 | Creates a new user with a home directory.      | `sudo adduser alice`              | `Adding user 'alice'...`                  |
+| `useradd`       | `-m, -d, -s, -c, -e`         | Adds a new user (less interactive than adduser). | `sudo useradd -m -s /bin/bash bob`| No output if successful                   |
+| `passwd`        | `[username]`                 | Sets or changes the password for a user.      | `sudo passwd alice`               | `Enter new password: ********`            |
+| `usermod`       | `-aG, -L, -U, -s, -d, -e`    | Modifies user account properties.             | `sudo usermod -aG sudo alice`     | No output if successful                   |
+| `deluser`       | `[username]`                 | Deletes a user and optionally removes files.  | `sudo deluser alice`              | `Removing user 'alice'...`                |
+| `userdel`       | `-r`                         | Deletes a user and removes their home directory. | `sudo userdel -r bob`            | No output if successful                   |
+| `chage`         | `-l, -M, -m, -W, -I`         | Configures password expiry policies.          | `sudo chage -l john_doe`          | `Last password change: Aug 19, 2024`      |
+| `groups`        | `[username]`                 | Displays groups the user belongs to.          | `groups john_doe`                 | `john_doe : john_doe sudo`                |
+| `finger`        | `[username]`                 | Displays detailed information about a user.  | `finger john_doe`                 | `Login: john_doe Name: John Doe Directory: /home/john_doe` |
+| `getent`        | `passwd [username]`          | Queries user info from the system database.   | `getent passwd john_doe`          | `john_doe:x:1000:1000:John Doe:/home/john_doe:/bin/bash` |
+| `su`            | `[username]`                 | Switches to another user account.             | `su - alice`                      | `alice@hostname:/home/alice$`             |
+| `sudo`          | `[command]`                  | Executes a command with elevated privileges. | `sudo apt update`                 | Updates system package lists             |
+| `w`             | None                         | Displays users currently logged in.           | `w`                               | Shows logged-in users and active sessions |
+| `who`           | None                         | Shows who is logged in.                        | `who`                             | `john_doe :0 2024-08-19 08:12 (:0)`        |
+| `last`          | `[username]`                 | Displays login history of users.              | `last john_doe`                   | `john_doe tty7 :0 Fri Aug 18 08:21 - down` |
+| `lastlog`       | None                         | Shows the last login of all users.             | `lastlog`                         | Displays last login for each user         |
+| `logname`       | None                         | Prints the current logged-in user.            | `logname`                         | `john_doe`                                |
+| `whoami`        | None                         | Displays the current user's name.             | `whoami`                          | `john_doe`                                |
+| `pinky`         | `[username]`                 | Displays concise user information.            | `pinky john_doe`                  | Similar to `finger` but more concise.     |
+
+---
+
+### Notes:
+- **Commands like `useradd` and `userdel`** require `sudo` privileges.
+- **Interactive commands like `passwd`** require user input for passwords.
+- **Difference between `adduser` and `useradd`**: `adduser` is more user-friendly, while `useradd` is lower-level and requires manual directory and file setup.
+- **Password expiration commands**: `chage` can be used to set when a password expires, how soon a warning is issued, etc.
