@@ -289,7 +289,7 @@ R&D:x:1050:
 ### SetUID (Set User ID) 
 * SetUID (Set User ID) is a special access right that can be assigned to executable files in Linux/Unix systems.
 * When a program with SetUID is executed, the program runs with the privileges of the file owner (usually root) instead of the privileges of the user who ran the program. * This is useful when a non-privileged user needs to run a program that requires elevated privileges.
-* You can set the SetUID bit using the chmod command with the +s option.
+* You can set the SetUID bit using the chmod command with the +s option and remove by -s option.
 ```bash
 root@server# chmod u+s /path/to/program
 root@server# ls -l /path/to/program
@@ -310,10 +310,15 @@ root@server# ls -l /usr/bin/passwd
 * SetGID (Set Group ID) is similar to SetUID but applies to the group instead of the user.
 * When a program with SetGID is executed, it runs with the permissions of the file's group rather than the group of the user who executed it.
 * Additionally, if a directory has the SetGID bit set, any new files created within that directory inherit the group of the directory, not the user's primary group.
-* You can set the SetGID bit using the chmod command with the +s option.
+* You can set the SetGID bit using the chmod command with the +s option  and remove by -s option.
 
 ```bash
 root@server# chmod g+s /path/to/program_or_directory
 root@server# ls -l /path/to/program_or_directory
 -rwxr-sr-x 1 root staff 12345 Jan 1 12:00 /path/to/program
+
+```
+* To remove the SetGID attribute from the /bin/ls program, you would use this
+```bash
+[root@server ~]# chmod g-s /bin/ls
 ```
