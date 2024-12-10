@@ -13,7 +13,13 @@ $ grep -f patterns.txt file.txt      # Using -f to read patterns from a file
 $ grep -l "word" *.txt               # Filter Files with Matches
 $ cat file.txt | grep "word" | grep -v "exclude_this" 
 ```
-
+### Log search
+```bash
+grep 'error' /var/log/syslog             # Search for the word 'error' in the syslog file
+grep -i 'error' /var/log/syslog          # Case-insensitive search for 'error'
+grep -r 'error' /var/log/                # Recursively search for 'error' in all files in /var/log/
+dmesg | grep 'usb'                      # Filter output of dmesg to only show USB-related logs
+```
 
 ### Using together
 ```bash
@@ -79,7 +85,39 @@ Chain grep with other commands to refine output:
 cat file.txt | grep "word" | grep -v "exclude_this"
 ```
 
-### Use grep ls
+### which - Shows the path of the executable file for a command.
+
+```bash
+user@Server# which python3
+/usr/bin/python3
+
+### whereis - Locates the binary, source, and manual page files for a command.
+
+```bash
+whereis ifconfig
+```
+This will show the location of the ifconfig executable, source, and man page files.
+Note: It does not search user directories, only system directories like /usr/bin, /bin, /sbin, etc.
+
+### locate -  Quickly finds files using a prebuilt database of file paths.
+This will search for all paths containing index.html.
+Note: If the file was created recently, it might not be in the database. Use the updatedb command to refresh the database.
+```bash
+sudo updatedb
+locate index.html
+```
+
+### find
+
+```bash
+find / -type d -name conf       # Finds directories named "conf"
+find / -user donc               # Finds all files owned by the user "donc"
+find / -name donc               # Finds files named "donc"
+find -name 'index.html'         # Finds 'index.html' in current directory and subdirectories
+find / -name 'index.html'       # Finds 'index.html' starting from the root directory
+find -name 'sshd*'              # Finds files starting with 'sshd'
+find -name '*' -size +500k      # Finds files larger than 500 KB
+```
 
 ### Use grep with find
 Efficiently search for a specific term in files matching a pattern (e.g., *.txt). 
@@ -120,3 +158,23 @@ find /path/to/search -size +100M
 find /path/to/search -type d
 ```
 ###  Find files modified by time i.e - in the last 7 days
+```bash
+find . -type f -mtime -7   # Find files modified with in the last 7 days
+find . -type f -mtime +7   # Find files modified more than 7 days ago
+find . -type f -mtime 7    # Find files modified exactly 7 days ago
+
+```
+
+### Xarg  - It takes output from another command (like find, ls, or cat) and passes it as arguments to another command.
+
+```bash
+find /tmp -name '*.log' | xargs rm                       # Delete all .log files in the /tmp directory
+find . -name '*.txt' | xargs -I {} mv {} {}.bak          # Rename all .txt files to .bak files.
+
+find . -name '*.txt' | xargs tar -czf archive.tar.gz     # Compress all .txt files in a directory into a single .tar.gz file
+find . -type f -size +1M | xargs tar -czf large_files.tar.gz # Compress Files Larger Than 1MB
+find . -name 'error*' | xargs tar -czf error_files.tar.gz    # Archive Files by Name
+
+find /tmp -type f -empty | xargs rm                      #  Remove all empty files from the /tmp directory.
+find . -name '*.txt' | xargs -I {} echo {} | wc -l       # Count Number of Files in a Directory
+```
