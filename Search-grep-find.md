@@ -90,7 +90,7 @@ cat file.txt | grep "word" | grep -v "exclude_this"
 ```bash
 user@Server# which python3
 /usr/bin/python3
-
+```
 ### whereis - Locates the binary, source, and manual page files for a command.
 
 ```bash
