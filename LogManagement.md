@@ -40,8 +40,9 @@ perf stat ./your_program
 
 ### Redirect output to a file and display it at the same time 
 ```bash
-$ ls -l | tee output.txt   # Writes the output to the file output.txt and simultaneously displays it on the terminal.
-$ ls -l | tee -a output.txt
+ # Writes the output to the file output.txt and simultaneously displays it on the terminal.
+$ ls -l | tee output.txt  
+$ ls -l | tee -a output.txt  # Append to a file instead of overwriting:
 ```
 
 ### Standard Streams && redirection
