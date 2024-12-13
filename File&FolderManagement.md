@@ -56,3 +56,49 @@ Change: 2024-12-13 10:46:47.150998841 +0530
  Birth: 2024-12-13 10:46:28.518999999 +0530
 
 ```
+### basename - Extract the filename from a path.
+```bash
+$ basename /lhome/azahask/azaharWorkspace/Learning/python-crud-app/script.sh 
+script.sh
+```
+### dirname - Extract the directory path from a file path.
+```bash
+$ dirname /lhome/azahask/azaharWorkspace/Learning/python-crud-app/script.sh 
+/lhome/azahask/azaharWorkspace/Learning/python-crud-app
+```
+
+###  du - Display disk usage of files and directories in in human-readable format
+
+```bash
+
+$ du -h /lhome/azahask/azaharWorkspace/Learning/
+4.0K	/lhome/azahask/azaharWorkspace/Learning/linuxAdmin
+12K	/lhome/azahask/azaharWorkspace/Learning/python-grpc/__pycache__
+36K	/lhome/azahask/azaharWorkspace/Learning/python-grpc
+24K	/lhome/azahask/azaharWorkspace/Learning/python-crud-app
+68K	/lhome/azahask/azaharWorkspace/Learning/
+
+$ du -sh /lhome/azahask/azaharWorkspace/Learning/
+68K	/lhome/azahask/azaharWorkspace/Learning/
+
+```
+
+### df -Shows disk space usage in a human-readable format
+
+```bash
+$ df -h
+Filesystem                               Size  Used Avail Use% Mounted on
+tmpfs                                     13G  4.3M   13G   1% /run
+efivarfs                                 246K  178K   64K  74% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv--root  931G   22G  862G   3% /
+tmpfs                                     63G  352M   63G   1% /dev/shm
+tmpfs                                    5.0M  4.0K  5.0M   1% /run/lock
+/dev/nvme0n1p2                           2.9G  568M  2.2G  21% /boot
+/dev/nvme0n1p1                           511M  5.0M  507M   1% /boot/efi
+tmpfs                                     13G  156K   13G   1% /run/user/1572982680
+```
+
+* The root partition has significant free space (only 3% usage), which provides flexibility for future storage needs. /dev/mapper/ubuntu--vg-ubuntu--lv--root  ,  862GB free available.
+* Boot and EFI partitions have low usage, typical for system files and firmware requirements.
+* Temporary file systems (tmpfs) have sufficient capacity and are not heavily utilized. Used for runtime data storage (non-persistent) during system operation. & Used to store lock files to prevent simultaneous access to certain resources.
+* Firmware variable storage (/sys/firmware/efi/efivars) has higher usage but is not a concern as it is a small, specialized partition.
