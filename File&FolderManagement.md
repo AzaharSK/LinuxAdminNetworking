@@ -33,3 +33,26 @@ Access: 2024-12-13 13:58:53.274508740 +0530
 Modify: 2024-12-13 13:58:37.035180038 +0530
 Change: 2024-12-13 13:58:45.104342948 +0530
  Birth: 2024-12-13 13:58:37.035180038 +0530
+
+$ stat /dev/tty0
+  File: /dev/tty0
+  Size: 0         	Blocks: 0          IO Block: 4096   character special file
+Device: 5h/5d	Inode: 14          Links: 1     Device type: 4,0
+Access: (0620/crw--w----)  Uid: (    0/    root)   Gid: (    5/     tty)
+Access: 2024-12-13 10:46:47.165998840 +0530
+Modify: 2024-12-13 10:47:02.000000000 +0530
+Change: 2024-12-13 10:46:47.165998840 +0530
+ Birth: 2024-12-13 10:46:28.518999999 +0530
+
+
+$ stat /dev/mem
+  File: /dev/mem
+  Size: 0         	Blocks: 0          IO Block: 4096   character special file
+Device: 5h/5d	Inode: 4           Links: 1     Device type: 1,1
+Access: (0640/crw-r-----)  Uid: (    0/    root)   Gid: (   15/    kmem)
+Access: 2024-12-13 10:46:47.150998841 +0530
+Modify: 2024-12-13 10:46:47.150998841 +0530
+Change: 2024-12-13 10:46:47.150998841 +0530
+ Birth: 2024-12-13 10:46:28.518999999 +0530
+
+```
