@@ -37,3 +37,21 @@ journalctl -xe  # Show logs from the system's journal (including errors)
 ```bash
 perf stat ./your_program
 ```
+
+### Redirect output to a file and display it at the same time 
+```bash
+$ ls -l | tee output.txt   # Writes the output to the file output.txt and simultaneously displays it on the terminal.
+$ ls -l | tee -a output.txt
+```
+
+### Standard Streams && redirection
+
+![image](https://github.com/user-attachments/assets/6d709336-f0ca-40c8-aa29-26cbbb2f0ae8)
+
+```bash
+$ ls > output.txt                               # This redirects STDOUT (1>) to output.txt, but errors (STDERR) are still shown in the terminal.
+$ ls /nonexistent_directory 2> error.txt        # This sends only errors to error.txt. The 2> tells the shell to redirect file descriptor 2 (STDERR) to error.txt.
+$ ls /nonexistent_directory &> output.txt       # Redirect STDOUT and STDERR to the same file
+$ command > /dev/null 2>&1                      # This discards all output (both STDOUT and STDERR) by redirecting them to /dev/null.
+```
+
