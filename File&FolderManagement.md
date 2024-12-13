@@ -102,3 +102,51 @@ tmpfs                                     13G  156K   13G   1% /run/user/1572982
 * Boot and EFI partitions have low usage, typical for system files and firmware requirements.
 * Temporary file systems (tmpfs) have sufficient capacity and are not heavily utilized. Used for runtime data storage (non-persistent) during system operation. & Used to store lock files to prevent simultaneous access to certain resources.
 * Firmware variable storage (/sys/firmware/efi/efivars) has higher usage but is not a concern as it is a small, specialized partition.
+
+### tar Create and extract archive files.
+```bash
+tar -cvf archive.tar file1 file2 # Creates archive.tar containing file1 and file2
+tar -xvf archive.tar # Extracts files from archive.tar
+```
+### zip - Compress files and directories into a .zip archive.
+```bash
+zip archive.zip file1 file2 # Creates archive.zip containing file1 and file2
+unzip archive.zip # Extracts all files from archive.zip
+```
+![image](https://github.com/user-attachments/assets/f2373fcb-c282-4165-a697-8ec929cc9ee3)
+
+![image](https://github.com/user-attachments/assets/ec79f97c-ac26-49c4-aac1-bb9f309874f1)
+
+
+### rsync - Efficiently synchronize files and directories.
+* The rsync command is a fast, versatile, and powerful tool used to synchronize files and directories between two locations. 
+* It can be used locally (within the same machine) or remotely (between different systems) over an SSH connection. 
+* The key feature of rsync is that it only transfers the changes (deltas) in files instead of copying entire files, making it much faster and more efficient.
+```bash
+# rsync -avz /source/ /destination/ # Synchronizes source to destination with compression
+#  -a	Archive mode (preserves file permissions, symbolic links, etc.)
+#  -v	Verbose mode (shows details of the transfer)
+#  -z	Compresses data during transfer to speed it up
+
+$ rsync -v /path/to/source/file.txt /path/to/destination/             # Copy a single file locally file.txt
+$ rsync -av /source/directory/ /destination/directory/                # Copy a directory locally
+$ rsync -av --delete /source/directory/ /destination/directory/       #  Delete files in the destination that no longer exist in the source
+$ rsync -av --delete --dry-run /source/directory/ /destination/directory/  # Use --dry-run to preview changes before syncing. This avoids accidental overwrites or deletions.
+
+
+
+$ rsync -avz /local/directory/ user@remote_server:/remote/directory/   # Copy files to a remote server Uses SSH for the remote transfer,
+$ rsync -avz user@remote_server:/remote/directory/ /local/directory/   # Copy files from a remote server to the local machine
+
+```
+* Practical usages
+```bash
+$ rsync -av --exclude='*.tmp' /home/user/ /mnt/backup/home_backup/                      # This backs up /home/user/ to /mnt/backup/home_backup/ while excluding temporary .tmp files.
+$ rsync -avz user@server:/var/www/html/ /local/backup/                                  # This downloads the remote website's files to /local/backup/.
+$ rsync -av --delete /source/ /destination/                                             # Mirror Directories and Remove Extra Files: makes sure that /destination/ is an exact mirror of /source/, deleting extra files in the destination.
+```
+
+![image](https://github.com/user-attachments/assets/ddd0baca-9248-4f94-8f23-b08f9148f632)
+
+![image](https://github.com/user-attachments/assets/1dbaa61d-950f-4261-b21e-9f2c8b494d26)
+
