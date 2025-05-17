@@ -1,10 +1,8 @@
-![image](https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636)
-
 <img src="https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636" alt="Alt Text" style="width:100%; height:auto;">
 
 
 #  Windows 
-![image](https://github.com/user-attachments/assets/b8cd022d-891f-42e6-bc01-48a7db892e3d)
+<img src="https://github.com/user-attachments/assets/b8cd022d-891f-42e6-bc01-48a7db892e3d" alt="Alt Text" style="width:100%; height:auto;">
 
 
 # Linux
