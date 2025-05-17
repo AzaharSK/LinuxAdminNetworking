@@ -6,10 +6,27 @@
 
 
 # Linux
+![image](https://github.com/user-attachments/assets/7fc4aa78-0efe-42aa-adfb-f25c8df84e86)
+
+![image](https://github.com/user-attachments/assets/5dc2dcc0-7eab-485b-91e0-a675ce17ec79)
+
+
 ![image](https://github.com/user-attachments/assets/d7e34ef8-268d-4516-866d-049f4184225d)
 <img src="https://github.com/user-attachments/assets/2016bd47-5bf3-402e-ba8b-8cb626efeaf6" alt="Alt Text" style="width:100%; height:auto;">
 
-
+### 1.3 million smart phones running Linux are activated every single day.
+### 700,000 televisions are sold every single day running Linux.
+### 92% of the world's high-performance computing systems that predict climate change, forecast the weather,run the CERN supercollider, are all running Linux.
+### 85% of the world's global equity trading platforms run Linux.
+- The New York Stock Exchange,
+- the Tokyo Stock Exchange,
+- the London Stock Exchange,
+- most of our economy runs on Linux.
+### 1000 trillion dollars is the amount of transactions that happen on just one Linux system,
+- the Chicago Mercantile Exchange.
+- It runs Google, Facebook, Amazon,
+- most of the Internet;
+### it is by far the world's most widely deployed software.
 
 ![image](https://github.com/user-attachments/assets/2194ea3a-b7c8-4ac8-b497-5e12a13e6097)
 
