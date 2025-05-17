@@ -53,18 +53,14 @@
 
 
 ![image](https://github.com/user-attachments/assets/cb0d9437-f0c7-4cde-8419-e243e658de0a)
-
 ![image](https://github.com/user-attachments/assets/18a695ec-3cde-4417-a574-169d42dcbe69)
 ![image](https://github.com/user-attachments/assets/e077fabc-978f-4e63-b2ce-905f46490f19)
-
-
 ![image](https://github.com/user-attachments/assets/4470dfee-e4e1-46c1-b095-cfa514b53082)
-
 ![image](https://github.com/user-attachments/assets/3aea154f-b790-42aa-8338-cdbd716d68ab)
-
-![image](https://github.com/user-attachments/assets/1869a940-4a8a-40e7-929e-824cac79038b)
-
+![image](https://github.com/user-attachments/assets/770ac689-7215-4a92-bb0e-b759867ebe2b)
+![image](https://github.com/user-attachments/assets/f67fe89b-7cb6-45c1-9629-5ec070c44e8e)
 ![image](https://github.com/user-attachments/assets/aed1cc91-77a0-433b-bb7b-c2d21b511ed6)
+![image](https://github.com/user-attachments/assets/8fa7b40d-f676-4bb4-9d70-be2ea9a5fa4c)
 
 
 #  Linux Layered Architecture 
