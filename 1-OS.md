@@ -20,7 +20,7 @@
 
 ![image](https://github.com/user-attachments/assets/c1738e40-5b91-4dc6-9c31-8cccb6e439c4)
 
-# Linux :  Linus Torvalds created Linux, 
+# Linux :  Linus Torvalds created Linux, Free to use, No License/payment required, Anyone can contribute ( 1000 company, Million Engineer contribute) 
 - the world's most successful software. It runs everything
 ![image](https://github.com/user-attachments/assets/7fc4aa78-0efe-42aa-adfb-f25c8df84e86)
 
@@ -50,6 +50,9 @@
 ### Total lines of code: ~30 million lines/ 3 crores Lines
 ### 10519, 6782. That's the number of lines of code added to and subtracted from Linux every single day.
 ### A million lines of code were added to Linux just in the last year.
+
+![image](https://github.com/user-attachments/assets/cb0d9437-f0c7-4cde-8419-e243e658de0a)
+
 <img src="https://github.com/user-attachments/assets/4bbdc817-dc12-4a6b-a72a-e4fced9f230d" alt="Alt Text" style="width:100%; height:auto;">
 
 <img src="https://github.com/user-attachments/assets/2016bd47-5bf3-402e-ba8b-8cb626efeaf6" alt="Alt Text" style="width:100%; height:auto;">
