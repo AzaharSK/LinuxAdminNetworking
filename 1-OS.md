@@ -62,7 +62,9 @@
 
 ![image](https://github.com/user-attachments/assets/3aea154f-b790-42aa-8338-cdbd716d68ab)
 
+![image](https://github.com/user-attachments/assets/1869a940-4a8a-40e7-929e-824cac79038b)
 
+#  Linux Layered Architecture 
 ![image](https://github.com/user-attachments/assets/59ee3d07-42c6-41ab-b9aa-0d78bf6e696e)
 
 <img src="https://github.com/user-attachments/assets/4bbdc817-dc12-4a6b-a72a-e4fced9f230d" alt="Alt Text" style="width:100%; height:auto;">
