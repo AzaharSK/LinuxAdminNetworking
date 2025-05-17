@@ -88,3 +88,14 @@
 
 ![image](https://github.com/user-attachments/assets/574c1599-2662-4499-9899-60fe9795d035)
 
+![image](https://github.com/user-attachments/assets/de6ac3d6-3a38-49e3-883c-fc78eaa88e17)
+
+### blame:
+![image](https://github.com/user-attachments/assets/b3ed3cca-d1dd-48d4-8c15-10726d6cdead)
+
+## view graphical representation of the boot process, showing the dependencies between services and the time taken for each service to start, you can use the following command :
+```bash
+systemd-analyze plot > boot.svg
+```
+![image](https://github.com/user-attachments/assets/7fca1dbd-ba6b-4e17-b580-b09156da1030)
+
