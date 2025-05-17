@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636)
 
-<img src="https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636" alt="Alt Text" style="width:50%; height:auto;">
+<img src="https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636" alt="Alt Text" style="width:100%; height:auto;">
 
 
 #  Windows 
