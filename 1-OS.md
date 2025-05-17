@@ -16,8 +16,7 @@
 ### 85% of the world's global equity trading platforms run Linux.
 - The New York Stock Exchange,
 - the Tokyo Stock Exchange,
-- the London Stock Exchange,
-- most of our economy runs on Linux.
+- the London Stock Exchange, most of our economy runs on Linux.
 ### 1000 trillion dollars is the amount of transactions that happen on just one Linux system,
 - the Chicago Mercantile Exchange.
 - It runs Google, Facebook, Amazon,
