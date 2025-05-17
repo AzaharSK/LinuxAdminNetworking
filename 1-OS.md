@@ -32,10 +32,10 @@
 ### it runs most of the Internet.
 ### You use Linux every single day, multiple times a day, and you don't even know it.
 
-![image](https://github.com/user-attachments/assets/d7e34ef8-268d-4516-866d-049f4184225d)
+
 <img src="https://github.com/user-attachments/assets/2016bd47-5bf3-402e-ba8b-8cb626efeaf6" alt="Alt Text" style="width:100%; height:auto;">
 
-
+![image](https://github.com/user-attachments/assets/d7e34ef8-268d-4516-866d-049f4184225d)
 
 ![image](https://github.com/user-attachments/assets/2194ea3a-b7c8-4ac8-b497-5e12a13e6097)
 
