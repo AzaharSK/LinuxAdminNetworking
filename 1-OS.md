@@ -9,6 +9,15 @@
 #  Windows 
 <img src="https://github.com/user-attachments/assets/b8cd022d-891f-42e6-bc01-48a7db892e3d" alt="Alt Text" style="width:100%; height:auto;">
 
+# Unix : IBM, Apple, SUN microsystem use it mostly
+![image](https://github.com/user-attachments/assets/a66bf89f-d50d-49d7-8ce3-7ec9cd2ec665)
+
+![image](https://github.com/user-attachments/assets/fa1028d0-2093-4021-bd6d-3052b749a8df)
+
+![image](https://github.com/user-attachments/assets/9dc105b6-9456-43a6-8f40-291711ef9295)
+
+
+![image](https://github.com/user-attachments/assets/c1738e40-5b91-4dc6-9c31-8cccb6e439c4)
 
 # Linux :  Linus Torvalds created Linux, 
 - the world's most successful software. It runs everything
@@ -56,6 +65,5 @@
 
 ![image](https://github.com/user-attachments/assets/3ae12dc6-fe0a-4af8-8146-4fcde34a7353)
 
-![image](https://github.com/user-attachments/assets/c1738e40-5b91-4dc6-9c31-8cccb6e439c4)
 
 
