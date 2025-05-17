@@ -10,7 +10,8 @@
 <img src="https://github.com/user-attachments/assets/b8cd022d-891f-42e6-bc01-48a7db892e3d" alt="Alt Text" style="width:100%; height:auto;">
 
 # Unix : IBM, Apple, SUN microsystem use it mostly
-![image](https://github.com/user-attachments/assets/a66bf89f-d50d-49d7-8ce3-7ec9cd2ec665)
+<img src="https://github.com/user-attachments/assets/a66bf89f-d50d-49d7-8ce3-7ec9cd2ec665" alt="Alt Text" style="width:100%; height:auto;">
+
 
 ![image](https://github.com/user-attachments/assets/fa1028d0-2093-4021-bd6d-3052b749a8df)
 
