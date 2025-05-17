@@ -5,7 +5,8 @@
 <img src="https://github.com/user-attachments/assets/b8cd022d-891f-42e6-bc01-48a7db892e3d" alt="Alt Text" style="width:100%; height:auto;">
 
 
-# Linux
+# Linux :  Linus Torvalds created Linux, 
+- the world's most successful software. It runs everything
 ![image](https://github.com/user-attachments/assets/7fc4aa78-0efe-42aa-adfb-f25c8df84e86)
 
 ![image](https://github.com/user-attachments/assets/5dc2dcc0-7eab-485b-91e0-a675ce17ec79)
