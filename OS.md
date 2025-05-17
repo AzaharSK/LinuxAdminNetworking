@@ -6,7 +6,7 @@
 
 
 # Linux
-![image](https://github.com/user-attachments/assets/2016bd47-5bf3-402e-ba8b-8cb626efeaf6)
+<img src="https://github.com/user-attachments/assets/2016bd47-5bf3-402e-ba8b-8cb626efeaf6" alt="Alt Text" style="width:100%; height:auto;">
 
 ![image](https://github.com/user-attachments/assets/54d54ea3-3732-431b-b40c-72d57393c903)
 
