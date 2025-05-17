@@ -51,10 +51,12 @@
 ### 10519, 6782. That's the number of lines of code added to and subtracted from Linux every single day.
 ### A million lines of code were added to Linux just in the last year.
 
+
+![image](https://github.com/user-attachments/assets/cb0d9437-f0c7-4cde-8419-e243e658de0a)
+
 ![image](https://github.com/user-attachments/assets/18a695ec-3cde-4417-a574-169d42dcbe69)
 ![image](https://github.com/user-attachments/assets/e077fabc-978f-4e63-b2ce-905f46490f19)
 
-![image](https://github.com/user-attachments/assets/cb0d9437-f0c7-4cde-8419-e243e658de0a)
 
 ![image](https://github.com/user-attachments/assets/4470dfee-e4e1-46c1-b095-cfa514b53082)
 
