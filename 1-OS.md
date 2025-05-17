@@ -1,6 +1,7 @@
 ![image](https://github.com/user-attachments/assets/bac96a98-c872-4d8a-9951-3701fbc830d5)
-![image](https://github.com/user-attachments/assets/db74d1ae-0e0b-45f2-ac04-3bd56668d744)
+![image](https://github.com/user-attachments/assets/28089153-dab6-446e-8120-4a8a239a113e)
 
+<img src="https://github.com/user-attachments/assets/db74d1ae-0e0b-45f2-ac04-3bd56668d744" alt="Alt Text" style="width:100%; height:auto;">
 
 <img src="https://github.com/user-attachments/assets/34ae0739-396f-4080-bcf3-c038a5180636" alt="Alt Text" style="width:100%; height:auto;">
 
